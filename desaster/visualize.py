@@ -16,7 +16,7 @@ Copyright (C) 2018  Scott B. Miles, milessb@uw.edu, scott.miles@resilscience.com
 '''
 
 from bokeh.plotting import figure
-from bokeh.layouts import column, widgetbox, row, gridplot, layout
+from bokeh.layouts import column, row, gridplot, layout
 from bokeh.models import CustomJS, Slider, ColumnDataSource, ranges
 from bokeh.io import output_file, show
 import bokeh.palettes

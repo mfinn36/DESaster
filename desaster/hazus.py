@@ -44,25 +44,25 @@ building_repair_times = pd.read_excel(hazus_parameters_file,
 # Structural damage value ratio lookup table from HAZUS-MH earthquake model technical
 # manual Table 15.2 (http://www.fema.gov/media-library/assets/documents/24609)
 structural_damage_ratios = pd.read_excel(hazus_parameters_file, 
-                                sheetname='Struct. Repair Cost % of value', 
+                                sheet_name='Struct. Repair Cost % of value', 
                                 index_col='Occupancy')
         
 # Acceleration damage value ratio lookup table from HAZUS-MH earthquake model technical
 # manual Table 15.3 (http://www.fema.gov/media-library/assets/documents/24609)                                  
 acceleration_damage_ratios = pd.read_excel(hazus_parameters_file, 
-                            sheetname='Accel non-struc repair cost', 
+                            sheet_name='Accel non-struc repair cost', 
                             index_col='Occupancy')
     
 # Drift damage value ratio lookup table from HAZUS-MH earthquake model technical
 # manual Table 15.4 (http://www.fema.gov/media-library/assets/documents/24609)                                       
 drift_damage_ratios = pd.read_excel(hazus_parameters_file, 
-                        sheetname='Deflect non-struc repair cost', 
+                        sheet_name='Deflect non-struc repair cost', 
                         index_col='Occupancy')
     
 # A conditional probability table to map HAZUS damage states to Burton et al.
 # recovery-based limit states.
 recovery_limit_states = pd.read_excel(hazus_parameters_file, 
-                        sheetname='Recovery limit states', 
+                        sheet_name='Recovery limit states', 
                         index_col='Damage State')
 
 def setStructuralDamageValueHAZUS(building):

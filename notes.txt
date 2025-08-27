@@ -1,0 +1,4 @@
+Lines of code needed to import desaster library:
+cd /Users/megan612/Desktop/DESaster
+pip install --upgrade pip setuptools wheel
+pip install -e .

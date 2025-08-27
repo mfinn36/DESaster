@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desaster"
+version = "0.2.0"
+description = "Post-disaster housing modeling and analysis tools"
+authors = [
+    { name="Megan Finnigan", email="megan612@mit.edu" }
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "folium",
+    "simpy",
+    "ipykernel",
+    "ipywidgets",
+    "scipy",
+    "seaborn",
+    "openpyxl",
+    "names",
+    "bokeh",
+    "geopandas"
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "flake8"]
+
+[tool.setuptools]
+packages = ["desaster"]

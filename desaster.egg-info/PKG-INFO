@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: desaster
+Version: 0.2.0
+Summary: Post-disaster housing modeling and analysis tools
+Author-email: Megan Finnigan <megan612@mit.edu>
+License-Expression: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: folium
+Requires-Dist: simpy
+Requires-Dist: ipykernel
+Requires-Dist: ipywidgets
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: openpyxl
+Requires-Dist: names
+Requires-Dist: bokeh
+Requires-Dist: geopandas
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Dynamic: license-file
+
+![DESaster object diagram](images/desaster_logo.png "Object diagram of DESaster")
+
+A discrete event disaster recovery simulation, currently focused on housing, built on top of the [Simpy](https://simpy.readthedocs.io/en/latest/) discrete event simulation Python library.
+
+More explanation about DESaster is given in [this pdf presentation](images/AboutDESaster10312017.pdf)
+
+*Principal Investigator:* [Scott B. Miles](https://www.hcde.washington.edu/miles), [University of Washington](http://www.washington.edu), [Department of Human Centered Design and Engineering](https://www.hcde.washington.edu)
+
+**Funding Support for DESaster**
+
+National Science Foundation, Infrastructure Management and Extreme Events Program, "Modeling Post-Disaster Housing Recovery Integrating Performance Based Engineering and Urban Simulation" #1560939
