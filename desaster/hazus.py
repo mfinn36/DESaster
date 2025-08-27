@@ -38,7 +38,7 @@ hazus_parameters_file = module_path + "/config/hazus_building_lookup_tables.xlsx
 # Building repair time lookup table from HAZUS-MH earthquake model technical
 # manual Table 15.9 (http://www.fema.gov/media-library/assets/documents/24609)
 building_repair_times = pd.read_excel(hazus_parameters_file, 
-                            sheetname='Repair times', 
+                            sheet_name='Repair times', 
                             index_col='Occupancy')
 
 # Structural damage value ratio lookup table from HAZUS-MH earthquake model technical
